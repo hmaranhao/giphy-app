@@ -7,13 +7,17 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
+    "cross-env": "^7.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
     "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env REACT_APP_GIPHY_KEY=X1doS5t2xc56iwXfvgYUusSbk5darAES react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

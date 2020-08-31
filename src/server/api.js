@@ -1,12 +1,11 @@
 import axios from 'axios'
-import { GIPHY_KEY } from './../envs'
 
 const api = axios.create({
   baseURL: 'https://api.giphy.com/v1/'
 })
 
 const requestSuccess = request => {
-  request.params = {...request.params, api_key: GIPHY_KEY }
+  request.params = {...request.params, api_key: process.env.REACT_APP_GIPHY_KEY }
 
   return request
 }
