@@ -52,9 +52,9 @@ function App({
     setGifs(favoritesReducer.list)
   }
 
-  // useEffect(() => {
-  //   loadGifsTrending()
-  // }, [])
+  useEffect(() => {
+    loadGifsTrending()
+  }, [])
 
   useEffect(() => {
     if(viewFavorites){
