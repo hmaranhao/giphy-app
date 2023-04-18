@@ -1,6 +1,7 @@
 {
   "name": "gliphy-app",
   "version": "0.1.0",
+  "homepage": "https://hmaranhao.github.io/giphy-app",
   "engines": {
     "node": "16.x"
   },
@@ -24,7 +25,9 @@
     "start": "cross-env REACT_APP_GIPHY_KEY=X1doS5t2xc56iwXfvgYUusSbk5darAES react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,5 +46,8 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
